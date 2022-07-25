@@ -15,17 +15,13 @@ body{
 
 }
 
-.centrar-titulo{
-    display: flex;
-    justify-content: center;
-    color: rgb(155, 206, 222);
-    
-}
+
 
 .navbar{
     background-color: rgb(16, 47, 56) !important;
     border: rgb(155, 206, 222) 3px solid ;
 }
+
 
 h1{
     color: rgb(155, 206, 222);
@@ -323,6 +319,14 @@ h5{
 
 
 /* ----- css pagina de comunidad ----- */
+
+
+.centrar-titulo{
+    display: flex;
+    justify-content: center;
+    color: rgb(155, 206, 222);
+    
+}
 
 .cuadro-color{
     color: rgb(155, 206, 222);
