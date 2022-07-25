@@ -1,0 +1,575 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ----- Css general y de la pagina de inicio ----- */
+body{
+    background-image: url(../img/gif5.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+
+}
+
+.centrar-titulo{
+    display: flex;
+    justify-content: center;
+    color: rgb(155, 206, 222);
+    
+}
+
+
+h1{
+    color: rgb(57, 135, 126);
+    font-size: 30px;
+    text-align: center;
+    padding: 8px;
+    border: rgb(155, 206, 222) 3px solid;
+    background-color: rgb(16, 47, 56);
+
+}
+
+nav{
+    background-color: rgba(16, 47, 56, 0.548);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+nav ul{
+    list-style-type: none;
+    height: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: rgb(155, 206, 222) 3px solid;
+}
+
+.enlace{
+    text-decoration: none;
+    color: rgb(155, 206, 222);
+}
+
+nav ul li a{
+    transition-delay: .2s;
+    transition-timing-function: ease;
+}
+
+nav ul li a:hover{
+    color: rgb(73, 239, 220);
+}
+
+main{
+    text-align: center;
+}
+
+.logo{
+    width: 35vw;
+    height: 17vh;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    animation-name: palpitar;
+    animation-duration: 1.7s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.img1{
+    width: 50vw;
+    height: 55vh;
+    display: none;
+    margin-bottom: 30px;
+    padding-right: 35px;
+}
+
+main div ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+main div ul li{
+    display: list-item;
+     
+    margin-bottom: 12px;
+}
+
+.ptr{
+    width: 35px;
+    height: 35px;
+    margin-top: 7px;
+}
+
+.ptr:hover{
+    width: 60px;
+    height: 60px;
+}
+
+
+.instw{
+    width: 42px;
+    height: 42px;
+}
+
+.instw:hover{
+    width: 70px;
+    height: 70px;
+}
+
+.disc{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.disc:hover{
+    width: 72px;
+    height: 72px;
+}
+
+p{
+    font-size: 18px;
+    color: rgb(155, 206, 222);
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+
+.formulario1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+label{
+    font-size: 18px;
+    color: rgb(155, 206, 222);
+}
+
+input{
+    
+    font-size: 18px;
+    color: rgb(155, 206, 222);
+    background-color: rgb(16, 47, 56);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+select{
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    color: rgb(155, 206, 222);
+    background-color: rgb(16, 47, 56);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.az{
+    color: blue;
+}
+
+.ro{
+    color: red;
+}
+
+.ve{
+    color: green;
+}
+
+.ce{
+    color: aqua;
+}
+
+.am{
+    color: yellow;
+}
+
+.mo{
+    color: purple;
+}
+
+.na{
+    color: orange;
+}
+
+.enviar{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+h3{
+    color: rgb(155, 206, 222);
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 2px;
+    margin-right: 2px;
+    
+}
+
+.comenzar{
+    font-size: 30px;
+    background-color: rgb(155, 206, 222);
+    border: rgb(16, 47, 56) 3px solid;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(16, 47, 56);
+    margin-bottom: 20px;
+}
+
+
+footer{
+    display: flex;
+    font-size: 16px;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 170px;
+    color: rgb(155, 206, 222);
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+h5{
+    margin-bottom: 70px;
+}
+
+/* ----- css pagina de noticias ----- */
+
+.noticias{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 95%;
+    justify-content: center;
+
+    animation-name: aparicion;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+.noticia{
+    text-align: center;
+    color: rgb(155, 206, 222);
+    list-style-type: none;
+    background-color: rgb(16, 47, 56);
+    border: rgb(57, 135, 126) 3px solid;
+    
+    
+}
+
+.noticias h2{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.noticias p{
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.noticias ul{
+    list-style-type: none;
+    height: 265px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.noticias li{
+    padding-bottom: 30px;
+    font-size: 15px;
+}
+
+.enlace2{
+    color: rgb(155, 206, 222);
+}
+
+.enlace2:hover{
+    color: rgb(57, 135, 126);
+}
+
+.evento p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* ----- css pagina de soporte ----- */
+
+.form-soporte{
+    text-align: center;
+    color: rgb(155, 206, 222)
+}
+
+.inp1{
+    width: 300px;
+}
+
+.texta1{
+    resize: none;
+    color: rgb(155, 206, 222);
+    font-size: 18px;
+    background-color: rgb(16, 47, 56);
+    
+}
+
+
+/* ----- css pagina de comunidad ----- */
+
+.cuadro-color{
+    color: rgb(155, 206, 222);
+    text-align: center;
+    background-color: rgb(16, 47, 56);
+    border: rgb(155, 206, 222) 3px solid;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.texta2{
+    resize: none;
+    font-size: 18px;
+    background-color: rgb(16, 47, 56);
+    color: rgb(155, 206, 222);
+}
+.enviar2{
+ text-align: center;
+ margin-bottom: 25px;
+}
+
+
+.comentario{
+    color: rgb(155, 206, 222);
+    background-color: rgb(16, 47, 56);
+    border: rgb(155, 206, 222) 3px solid;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 250px;
+}
+
+/* ------ css pagina de informacion ------ */
+
+.info{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 95%;
+    justify-content: center;
+
+    animation-name: aparicion;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+
+
+
+.info img{
+    width: 100%;
+    height: 30vh;
+}
+
+.info p{
+    padding: 7px;
+}
+
+
+@keyframes aparicion{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes palpitar{
+    0%{
+        transform: scale(.8,.7);
+    }
+
+    50%{
+        transform: scale(.9,.8);
+    }
+
+    100%{
+        transform: scale(1,.9);
+    }
+}
+
+/* ----- Media Queries----- */
+
+@media screen and (min-width: 650px){
+    /* Inicio */
+    .centro{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 120px;
+    }
+
+    .centro ul{
+        display: inline-block;
+    }
+
+    .logo{
+        width: 8vw;
+        height: 10vh;
+    }
+
+    .img1{
+        display: inline-block;
+        
+    }
+
+    h5{
+        font-size: 18px;
+    }
+
+
+    /* Soporte */
+    .texta1{
+        width: 80vw;
+    }
+
+    /* comunidad */
+    .texta2{
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 875px){
+
+    nav{
+        position: sticky; top: 10px;
+        z-index: 100;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    /* Grid de Noticias */
+
+    .noticias{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-areas: 
+        "not-1 not-2"
+        "not-3 not-4"
+        ;
+        padding: 15px;
+        column-gap: 15px;
+        row-gap: 40px;
+    }
+
+    .not-1{
+        grid-area: not-1;
+    }
+
+    .not-2{
+        grid-area: not-2;
+    }
+
+    .not-3{
+        grid-area: not-3;
+    }
+
+    .not-4{
+        grid-area: not-4;
+    }
+
+
+    /* Grid de Información */
+
+    .info{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-areas: 
+        "inf-1 inf-2"
+        "inf-3 inf-4"
+        "img2 img2"
+        ;
+        padding: 10px;
+    }
+
+    .info h2{
+        padding: 5px;
+    }
+
+    .info p{
+        height: 30vh ;
+        padding-top: 20px;
+    }
+
+    .inf-1{
+        grid-area: inf-1;
+    }
+
+
+    .inf-2{
+        grid-area: inf-2;
+    }
+
+    .inf-3{
+        grid-area: inf-3;
+    }
+
+    .inf-3 p{
+        height: 45vh;
+    }
+
+    .inf-4{
+        grid-area: inf-4;
+    }
+
+    .inf-4 p{
+        height: 45vh;
+    }
+
+    .img2{
+        grid-area: img2;
+    }
+
+    .info img{
+        height: 55vh;
+    }
+}
+
+@media screen and (min-width: 1245px){
+    .info p{
+        height: 20vh;
+    }
+
+    .inf-3 p{
+        height: 30vh;
+    }
+
+    .inf-4 p{
+        height: 30vh;
+    }
+}
