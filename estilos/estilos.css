@@ -43,17 +43,23 @@ h1{
     color: rgb(155, 206, 222);
 }
 
-nav ul li a{
-    transition-delay: .2s;
-    transition-timing-function: ease;
+.nav-link{
+    transition-delay: .1s !important;
+    transition-timing-function: ease !important;
 }
 
-nav ul li a:hover{
-    color: rgb(73, 239, 220);
+.nav-link:hover{
+    color: rgb(73, 239, 220) !important;
 }
 
 main{
     text-align: center;
+}
+
+.centro{
+    animation-name: aparicion;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 }
 
 .logo{
@@ -222,11 +228,9 @@ h3{
 
 footer{
     display: flex;
-    font-size: 16px;
     flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 170px;
+    font-size: 16px;
+    text-align: center;
     color: rgb(155, 206, 222);
     padding-left: 10px;
     margin-top: 20px;
@@ -465,7 +469,6 @@ h5{
 
 
     /* Grid de Noticias */
-
     .noticias{
         display: grid;
         grid-template-columns: repeat(2,2fr);
@@ -493,6 +496,7 @@ h5{
     .not-4{
         grid-area: not-4;
     }
+    
 
 
     /* Grid de Información */
