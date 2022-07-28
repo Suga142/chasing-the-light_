@@ -86,26 +86,19 @@
         
     <div class="form-soporte">
       <!-- formulario para dar soporte -->
-      <form action="">
-        <div>
-          <label for="">Introduce tu usuario:</label>
-          <input name="usuario" class="inp1" placeholder="usuario o correo electronico" type="text">
+      <form class="form-2">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Usuario:</label>
+          <input type="email" placeholder="usuario o correo electronico" class="form-control inp1" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
-        <div>
-          <label hidden for="">
-              resumen del problema
-          </label>
-
-          <textarea maxlength="400" class="texta1" placeholder="resume brevemente la situacion..."
-          name="resumen-problema" id="" cols="30" rows="10"></textarea>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+          <textarea placeholder="Resume brevemente la situación..."  class="form-control texta1" id="exampleFormControlTextarea1" ></textarea>
         </div>
-
-
-        <div>
-          <input type="submit" value="enviar">
-        </div>
+        <button type="submit" class="btn btn-success">Enviar</button>
       </form>
     </div>
+
   </main>
 
 
